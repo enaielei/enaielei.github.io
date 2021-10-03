@@ -110,5 +110,5 @@ const _Page = class {
 };
 let Page = _Page;
 Page.idPrefix = "profile";
-const ProfilePath = "/assets/documents/profile.json";
+const ProfilePath = "./assets/documents/profile.json";
 Page.initialize(ProfilePath);
