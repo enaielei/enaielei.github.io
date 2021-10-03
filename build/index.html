@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" 
+      type="image/jpg" 
+      href="/assets/images/ori.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/assets/third-party/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/index.css">
+    
+    <title>Profile</title>
+</head>
+<body>
+    <div id="_template", hidden>
+        <div id="_template-profile-label" class="ui horizontal label green"></div>
+
+        <i id="_template-profile-label-separator" class="circle icon profile-label-separator"></i>
+        
+        <table>
+            <tr id="_template-profile-educationentry">
+                <td data-label="date"></td>
+                <td data-label="school"></td>
+                <td data-label="specialty"></td>
+            </tr>
+        </table>
+        
+        <table>
+            <tr id="_template-profile-experienceentry">
+                <td data-label="date"></td>
+                <td data-label="workplace"></td>
+                <td data-label="position"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr id="_template-profile-seminarentry">
+                <td data-label="date"></td>
+                <td data-label="event"></td>
+                <td data-label="venue"></td>
+            </tr>
+        </table>
+        
+        <div id="_template-profile-masteryentry" class="ui active progress" data-percent="0">
+            <div class="bar"><div class="progress"></div></div>
+            <div class="label"></div>
+        </div>
+        
+        <div id="_template-profile-list-item-separator" class="ui divider"></div>
+        
+        <div id="_template-profile-list-item" class="item">
+            <div class="ui relaxed horizontal list root">
+            </div>
+        </div>
+        
+        <div id="_template-profile-list-item-subitem" class="item">
+            <div class="header label"></div>
+            <span class="value"></span>
+        </div>
+        
+        <div id="_template-profile-presenceentry" class="item">
+            <img class="ui avatar image" src="">
+            <div class="content">
+                <a class="header label"></a>
+                <div class="description alias"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile" class="ui piled text container segment">
+        <div class="ui bottom attached label green">
+            <div class="ui fitted container right aligned">
+                &copy; <span class="date-year"></span> <span class="profile-fullname"></span>. All Rights Reserved.<br> 
+                Made using 
+                    <a href="https://www.snowpack.dev/">Snowpack</a>, 
+                    <a href="https://fomantic-ui.com/">Fomantic-UI</a>, 
+                    <a href="https://sass-lang.com/">Sass</a>, and 
+                    <a href="https://www.typescriptlang.org/">TypeScript</a>.
+            </div>
+        </div>
+        
+        <div class="ui container segment">
+            <h1 class="ui center aligned header">
+                <img id="profile-image" class="ui circular image">
+                <br>
+                <span class="profile-fullname"></span>
+            </h1>
+
+            <div id="profile-labels" class="ui center aligned container">
+            </div>
+
+            <div id="profile-quote" class="ui center aligned container">
+                <q id="profile-quote-text"></q>
+                <small><span id="profile-quote-author"></span></small>
+            </div>
+        </div>
+        
+        <div class="ui horizontal divider">
+            Profile
+        </div>
+
+        <div class="ui grid">
+            <div class="four wide column">
+                <div class="ui vertical fluid tabular labeled icon menu">
+                    <a class="center item active" data-tab="main-menu-tab-0">
+                        <i class="user tie icon green"></i>Identity
+                    </a>
+                    <a class="center item" data-tab="main-menu-tab-1">
+                        <i class="university icon green"></i>Education
+                    </a>
+                    <a class="center item" data-tab="main-menu-tab-2">
+                        <i class="fire icon green"></i>Mastery
+                    </a>
+                    <a class="center item" data-tab="main-menu-tab-3">
+                        <i class="briefcase icon green"></i>Experience
+                    </a>
+                    <a class="center item" data-tab="main-menu-tab-4">
+                        <i class="bullhorn icon green"></i>Seminar
+                    </a>
+                    <a class="center item" data-tab="main-menu-tab-5">
+                        <i class="trophy icon green"></i>Recognition
+                    </a>
+                    <a class="center item" data-tab="main-menu-tab-6">
+                        <i class="address card icon green"></i>Presence
+                    </a>
+                </div>
+            </div>
+
+            <div class="ui twelve wide stretched column">
+                <div class="ui tab secondary segment main-menu-tab active" data-tab="main-menu-tab-0">
+                    <div id="profile-identity" class="ui very relaxed divided list">
+                        <div class="item">
+                            <div class="ui relaxed horizontal list">
+                                <div class="item">
+                                    <div class="header label">Given Name</div>
+                                    <span id="profile-givenname" class="value"></span>
+                                </div>
+                                <div class="item">
+                                    <div class="header label">Middle Name</div>
+                                    <span id="profile-middlename" class="value"></span>
+                                </div>
+                                <div class="item">
+                                    <div class="header label">Family Name</div>
+                                    <span id="profile-familyname" class="value"></span>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="item">
+                            <div class="ui relaxed horizontal list">
+                                <div class="item">
+                                    <div class="header label">Sex</div>
+                                    <span id="profile-sex" class="value"></span>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="item">
+                            <div class="ui relaxed horizontal list">
+                                <div class="item">
+                                    <div class="header label">Birthdate</div>
+                                    <span id="profile-birthdate" class="value"></span>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="item">
+                            <div class="ui relaxed horizontal list">
+                                <div class="item">
+                                    <div class="header label">Height</div>
+                                    <span id="profile-height" class="value"></span>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="item">
+                            <div class="ui relaxed horizontal list">
+                                <div class="item">
+                                    <div class="header label">Civil Status</div>
+                                    <span id="profile-civilstatus" class="value"></span>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="item">
+                            <div class="ui relaxed horizontal list">
+                                <div class="item">
+                                    <div class="header label">Religion</div>
+                                    <span id="profile-religion" class="value"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui tab secondary segment main-menu-tab" data-tab="main-menu-tab-1">
+                    <table class="ui celled table">
+                        <thead>
+                        <tr><th>Date</th>
+                        <th>School</th>
+                        <th>Specialty</th>
+                        </tr></thead>
+                        <tbody id="profile-education">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="ui tab secondary segment main-menu-tab" data-tab="main-menu-tab-2">
+                    <div id="profile-mastery" class="ui very relaxed list">
+                    </div>
+                </div>
+
+                <div class="ui tab secondary segment main-menu-tab" data-tab="main-menu-tab-3">
+                    <table class="ui celled table">
+                        <thead>
+                        <tr><th>Date</th>
+                        <th>Workplace</th>
+                        <th>Position</th>
+                        </tr></thead>
+                        <tbody id="profile-experience">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="ui tab secondary segment main-menu-tab" data-tab="main-menu-tab-4">
+                    <table class="ui celled table">
+                        <thead>
+                        <tr><th>Date</th>
+                        <th>Event</th>
+                        <th>Venue</th>
+                        </tr></thead>
+                        <tbody id="profile-seminar">
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="ui tab secondary segment main-menu-tab" data-tab="main-menu-tab-5">
+                    <div id="profile-recognition" class="ui very relaxed divided list">
+                    </div>
+                </div>
+
+                <div class="ui tab secondary segment main-menu-tab" data-tab="main-menu-tab-6">
+                    <div id="profile-presence" class="ui very relaxed divided list">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="/assets/scripts/index.js"></script>
+</body>
+</html>

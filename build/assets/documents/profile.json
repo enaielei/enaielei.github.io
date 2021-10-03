@@ -1,0 +1,186 @@
+{
+    "image": "/assets/images/ori.jpg",
+    "givenName": "Nommel Isanar",
+    "middleName": "Lavapie",
+    "familyName": "Amolat",
+    "sex": "Male",
+    "birthdate": "October 2, 1999",
+    "height": "161 centimeters",
+    "civilStatus": "Single",
+    "religion": "Roman Catholic",
+    "labels": ["Introvert", "Socially Awkward", "Taciturn", "Pacifist"],
+    "quote": {
+        "text": "An eye for an eye and the world goes blind.",
+        "author": "- Markus"
+    },
+    "education": [
+        {
+            "date": {
+                "from": "2018",
+                "to": null
+            },
+            "school": "Cavite State University",
+            "specialty": "Bachelor of Science in Information Technology"
+        },
+        {
+            "date": {
+                "from": "2016",
+                "to": "2018"
+            },
+            "school": "City of Bacoor Senior High School - San Nicholas",
+            "specialty": "Technical Vocational: ICT"
+        }
+    ],
+    "mastery": [
+        {
+            "label": "3D Development", 
+            "color": "darkorange",
+            "percentage": 0.3
+        },
+        {
+            "label": "Computer Hardware", 
+            "color": "darkred",
+            "percentage": 0.4
+        },
+        {
+            "label": "Image Manipulation", 
+            "color": "darkblue",
+            "percentage": 0.5
+        },
+        {
+            "label": "Networking", 
+            "color": "#013220",
+            "percentage": 0.2
+        },
+        {
+            "label": "Programming", 
+            "color": "#9B870C",
+            "percentage": 0.75
+        },
+        {
+            "label": "Video Manipulation", 
+            "color": "#301934",
+            "percentage": 0.3
+        },
+        {
+            "label": "Game Development", 
+            "color": "#151515",
+            "percentage": 0.75
+        },
+        {
+            "label": "Web Development", 
+            "color": "darkviolet",
+            "percentage": 0.5
+        },
+        {
+            "label": "Software Development", 
+            "color": "green",
+            "percentage": 0.35
+        }
+    ],
+    "experience": [
+        {
+            "date": {
+                "from": "June 2020",
+                "to": "August 2020"
+            },
+            "workplace": "Time Wizard Studios",
+            "position": "Game Programmer"
+        },
+        {
+            "date": {
+                "from": "April 2018",
+                "to": "July 2018"
+            },
+            "workplace": "Menandro's Printing Station",
+            "position": "Shop Assistant"
+        },
+        {
+            "date": {
+                "from": "January 3, 2018",
+                "to": "January 18, 2018"
+            },
+            "workplace": "Marilans Graphics and Printing",
+            "position": "Internship"
+        }
+    ],
+    "seminar": [
+        {
+            "date": "November 23, 2018",
+            "event": "Spectrum of Opportunities: Learn, Innovate & Motivate",
+            "venue": "Cavite State University - Bacoor City Campus"
+        }
+    ],
+    "recognition": [
+        {
+            "label": "Rank 1 in Class",
+            "date": "August 2017"
+        },
+        {
+            "label": "Rank 1 in Class",
+            "date": "April 2017"
+        },
+        {
+            "label": "Rank 1 in Class and School",
+            "date": "February 2017"
+        },
+        {
+            "label": "Rank 5 in Technical Vocational Track",
+            "date": "December 2016"
+        },
+        {
+            "label": "Best Layout Artist in Filipino Collaborative Publishing",
+            "date": "October 2015"
+        },
+        {
+            "label": "Best in Technology and Livelihood Education",
+            "date": "March 2014"
+        },
+        {
+            "label": "Most Punctual in Class",
+            "date": "March 2014"
+        },
+        {
+            "label": "Rank 7 in Filipino Sports Writing",
+            "date": "August 2010"
+        }
+    ],
+    "presence": [
+        {
+            "image": "/assets/images/codewars-logo.png",
+            "label": "Codewars",
+            "alias": "nommel-isanar",
+            "address": "https://www.codewars.com/users/nommel-isanar"
+        },
+        {
+            "image": "/assets/images/google-logo.png",
+            "label": "Google",
+            "alias": "nommel.isanar.lavapie.amolat@gmail.com",
+            "address": "nommel.isanar.lavapie.amolat@gmail.com"
+        },
+        {
+            "image": "/assets/images/github-logo.png",
+            "label": "GitHub",
+            "alias": "NI-L-A",
+            "address": "https://github.com/NI-L-A"
+        },
+        {
+            "image": "/assets/images/lsf-logo.jpg",
+            "label": "Lemma Soft Forums",
+            "alias": "hell_oh_world",
+            "address": "https://lemmasoft.renai.us/forums/memberlist.php?mode=viewprofile&u=48766"
+        },
+        {
+            "image": "/assets/images/stackoverflow-logo.png",
+            "label": "Stackoverflow",
+            "alias": "NILA",
+            "address": "https://stackoverflow.com/users/14733693/nila"
+        },
+        {
+            "image": "/assets/images/youtube-logo.png",
+            "label": "Youtube",
+            "alias": "Nommel Isanar Amolat",
+            "address": "https://www.youtube.com/channel/UCvC3j5qeswc5SY09JLiMBFw"
+        }
+    ]
+}

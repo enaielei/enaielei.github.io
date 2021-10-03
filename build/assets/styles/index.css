@@ -1,0 +1,31 @@
+#profile {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#profile-name {
+  text-transform: uppercase;
+}
+
+.profile-label-separator {
+  transform: scale(0.5, 0.5);
+}
+
+#profile-quote {
+  position: relative;
+  color: grey;
+  opacity: 0.75;
+  margin: 10px;
+}
+#profile-quote > small {
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+  transform: translate(-95%, 75%);
+  bottom: 0;
+}
+
+.main-menu-tab {
+  max-height: 500px;
+  overflow-y: auto;
+}
