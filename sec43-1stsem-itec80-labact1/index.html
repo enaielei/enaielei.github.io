@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="./assets/third-party/semantic/semantic.min.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEC 80 | Laboratory Activity 1</title>
+</head>
+<body>
+    <div id="_template" hidden>
+        <div id="_template-profile-entry-label" class="title">
+            <div class="ui compact checkbox">
+                <input type="checkbox">
+                <label></label>
+            </div>
+            <span class="icon-label">
+                <i class="dropdown icon"></i>
+                <span class="text">Nommel Isanar Lavapie Amolat</span>
+            </span>
+        </div>
+        <div id="_template-profile-entry-content" class="content">
+            <div class="ui profile-identity very relaxed divided list">
+                <div class="item">
+                    <div class="ui relaxed horizontal list">
+                        <div class="item">
+                            <div class="header label">Given Name</div>
+                            <span class="value profile-givenname"></span>
+                        </div>
+                        <div class="item">
+                            <div class="header label">Middle Name</div>
+                            <span class="value profile-middlename"></span>
+                        </div>
+                        <div class="item">
+                            <div class="header label">Family Name</div>
+                            <span class="value profile-familyname"></span>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="item">
+                    <div class="ui relaxed horizontal list">
+                        <div class="item">
+                            <div class="header label">Sex</div>
+                            <span class="value profile-sex"></span>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="item">
+                    <div class="ui relaxed horizontal list">
+                        <div class="item">
+                            <div class="header label">Birthdate</div>
+                            <span class="value profile-birthdate"></span>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="item">
+                    <div class="ui relaxed horizontal list">
+                        <div class="item">
+                            <div class="header label">Height</div>
+                            <span class="value profile-height"></span>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="item">
+                    <div class="ui relaxed horizontal list">
+                        <div class="item">
+                            <div class="header label">Civil Status</div>
+                            <span class="value profile-civilstatus"></span>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="item">
+                    <div class="ui relaxed horizontal list">
+                        <div class="item">
+                            <div class="header label">Religion</div>
+                            <span class="value profile-religion"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-container" class="ui raised padded text container piled segment">
+        <div class="ui bottom attached label green">
+            <div class="ui fitted container right aligned">
+                &copy; <span class="date-year"></span> <span class="profile-fullname">Nommel Isanar Lavapie Amolat</span>. All Rights Reserved.<br> 
+                Made using 
+                    <a href="https://www.snowpack.dev/">Snowpack</a>, 
+                    <a href="https://fomantic-ui.com/">Fomantic-UI</a>, 
+                    <a href="https://sass-lang.com/">Sass</a>, and 
+                    <a href="https://www.typescriptlang.org/">TypeScript</a>.
+            </div>
+        </div>
+
+        <div class="ui center aligned container very padded segment">
+            <h2 class="ui icon header">
+                <i class="user graduate icon green"></i>
+                <div class="content">
+                Simple Student Manager
+                <div class="sub header">A basic tool to manage your students.</div>
+                </div>
+            </h2>
+        </div>
+        <div class="ui container center aligned fitted">
+            <!-- <div class="ui buttons"> -->
+                <button class="ui labeled icon compact blue basic button profile-toggle-check-btn" data-tooltip="Toggle the selection of entries." data-inverted>
+                <i class="check icon"></i>
+                Toggle
+                </button>
+                <button class="ui labeled icon compact green basic button profile-add-entry-btn" data-tooltip="Create a new entry." data-inverted>
+                <i class="plus icon"></i>
+                Add
+                </button>
+                <button class="ui labeled icon compact red basic button profile-remove-entry-btn" data-tooltip="Remove the selected entries." data-inverted>
+                <i class="trash icon"></i>
+                Remove
+                </button>
+            <!-- </div> -->
+        </div>
+        <div class="ui divider"></div>
+        <div class="ui fitted segment">
+            <div id="profile-entries" class="ui styled fluid accordion">
+            </div>
+        </div>
+    </div>
+
+    <div id="profile-add-entry-modal" class="ui modal">
+        <div class="header">
+          New Entry
+        </div>
+        <div class="scrolling content">
+            <div class="ui form" action="#">
+                <div class="fields">
+                    <div class="six wide field">
+                        <label>Given Name</label>
+                        <input type="text" placeholder="Given Name" name="given-name">
+                    </div>
+                    <div class="four wide field">
+                        <label>Middle Name</label>
+                        <input type="text" placeholder="Middle Name" name="middle-name">
+                    </div>
+                    <div class="six wide field">
+                        <label>Family name</label>
+                        <input type="text" placeholder="Family Name" name='family-name'>
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="four wide field">
+                        <label>Sex</label>
+                        <div class="ui selection dropdown">
+                            <input type="hidden" name="sex">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Sex</div>
+                            <div class="menu">
+                                <div class="item" data-value="Male">Male</div>
+                                <div class="item" data-value="Female">Female</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ten wide field">
+                        <label>Birthdate</label>
+                        <div class="ui calendar">
+                            <div class="ui input left icon">
+                                <i class="calendar icon"></i>
+                                <input type="text" placeholder="Birthdate" name="birthdate">
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="two wide field">
+                        <label>Height (cm)</label>
+                        <input type="number" placeholder="Height" name="height">
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="nine wide field">
+                        <label>Civil Status</label>
+                        <input type="text" placeholder="Civil Status" name="civil-status">
+                    </div>
+                    <div class="seven wide field">
+                        <label>Religion</label>
+                        <input type="text" placeholder="Religion" name="religion">
+                    </div>
+                </div>
+                <div class="ui right aligned container fitted">
+                  <div class="ui primary approve green submit button">
+                    Add
+                    <i class="right plus icon"></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <script type="module" src="./assets/scripts/index.js"></script>
+</body>
+</html>

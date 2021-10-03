@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "dateformat": "./dateformat.js",
+    "js-quantities": "./js-quantities.js"
+  }
+}
