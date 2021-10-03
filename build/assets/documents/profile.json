@@ -1,5 +1,5 @@
 {
-    "image": "../assets/images/ori.jpg",
+    "image": "./assets/images/ori.jpg",
     "givenName": "Nommel Isanar",
     "middleName": "Lavapie",
     "familyName": "Amolat",
