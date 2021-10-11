@@ -1,6 +1,6 @@
 import dateFormat from "../../_snowpack/pkg/dateformat.js";
-import "../third-party/jquery/jquery.min.js";
-import "../third-party/semantic/semantic.min.js";
+import "../../third-party/jquery/jquery.min.js";
+import "../../third-party/semantic/semantic.min.js";
 import Profile from "./profile.js";
 const _Page = class {
   static initialize(path) {

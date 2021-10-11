@@ -147,37 +147,37 @@
     ],
     "presence": [
         {
-            "image": "./assets/images/codewars-logo.png",
+            "image": "/assets/images/codewars-logo.png",
             "label": "Codewars",
             "alias": "nommel-isanar",
             "address": "https://www.codewars.com/users/nommel-isanar"
         },
         {
-            "image": "./assets/images/google-logo.png",
+            "image": "/assets/images/google-logo.png",
             "label": "Google",
             "alias": "nommel.isanar.lavapie.amolat@gmail.com",
             "address": "nommel.isanar.lavapie.amolat@gmail.com"
         },
         {
-            "image": "./assets/images/github-logo.png",
+            "image": "/assets/images/github-logo.png",
             "label": "GitHub",
             "alias": "NI-L-A",
             "address": "https://github.com/NI-L-A"
         },
         {
-            "image": "./assets/images/lsf-logo.jpg",
+            "image": "/assets/images/lsf-logo.jpg",
             "label": "Lemma Soft Forums",
             "alias": "hell_oh_world",
             "address": "https://lemmasoft.renai.us/forums/memberlist.php?mode=viewprofile&u=48766"
         },
         {
-            "image": "./assets/images/stackoverflow-logo.png",
+            "image": "/assets/images/stackoverflow-logo.png",
             "label": "Stackoverflow",
             "alias": "NILA",
             "address": "https://stackoverflow.com/users/14733693/nila"
         },
         {
-            "image": "./assets/images/youtube-logo.png",
+            "image": "/assets/images/youtube-logo.png",
             "label": "Youtube",
             "alias": "Nommel Isanar Amolat",
             "address": "https://www.youtube.com/channel/UCvC3j5qeswc5SY09JLiMBFw"
